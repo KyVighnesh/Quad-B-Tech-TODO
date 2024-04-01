@@ -1,0 +1,38 @@
+
+.list-parent {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.listGroupItems {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+li {
+    width: 350px;
+    list-style: none;
+}
+
+
+#main-container {
+    background-color: rgb(205, 216, 227);
+    margin: auto;
+    min-height: 300px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.add-button {
+    margin: auto;
+    width: 130px;
+}
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
