@@ -68,7 +68,7 @@ const ViewTasks = () => {
             {tasks.map((ele,index)=> {
                 return(
                     
-<div className = "list-parent" style={{width:'80%'}}>
+<div className = "list-parent" style={{width:'100%'}}>
 <ListGroup.Item className = "listGroupItems" style={{width:'100%'}}>
 
     <li style={{textDecoration:ele.completed?"line-through":""}}>{ele.title}</li>
