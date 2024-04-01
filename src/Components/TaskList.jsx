@@ -57,19 +57,19 @@ const ViewTasks = () => {
     }
   return (
 
-    <div id = "component-body"style={{width:'100%'}}>
-        <div id='main-container' style={{width:"100%"}}>
+    <div id = "component-body">
+        <div id='main-container'>
             <div className='header'>
             <h4>TODO LIST</h4>
             </div>
  {['sm'].map((breakpoint) => (
-        <ListGroup key={breakpoint} className="my-2" style={{width:"100%"}}>
+        <ListGroup key={breakpoint} style={{width:'100%'}}>
 
             {tasks.map((ele,index)=> {
                 return(
                     
-<div className = "list-parent">
-<ListGroup.Item className = "listGroupItems" style={{width:"100%"}}>
+<div className = "list-parent" style={{width:'80%'}}>
+<ListGroup.Item className = "listGroupItems" style={{width:'100%'}}>
 
     <li style={{textDecoration:ele.completed?"line-through":""}}>{ele.title}</li>
     <li style={{textDecoration:ele.completed?"line-through":""}}>{ele.date}</li>
@@ -88,6 +88,9 @@ const ViewTasks = () => {
           
         </ListGroup>
       ))}
+
+      <br />
+      <br />
 
       <div className="add-button">
             <Button variant="dark" onClick={handleAddTask}>Add New Task</Button>
